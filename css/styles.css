@@ -1,0 +1,8 @@
+/* Main Styles */
+
+.header h1{
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+  background-color: black;
+}
