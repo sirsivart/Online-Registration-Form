@@ -1,8 +1,233 @@
 /* Main Styles */
 
-.header h1{
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header h2{
+  text-transform: uppercase;
   text-align: center;
   margin: 0 auto;
   color: white;
-  background-color: black;
+  background-color: #2d3945;
+  padding: 20px 0 20px 0;
+}
+
+.intro {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  border-bottom: solid 4px;
+}
+
+.intro p {
+  color: #b1b5b9;
+  margin: 0;
+  padding: 0 0 30px 0;
+}
+
+.form {
+  padding: 30px 0 0 0;
+  margin-top: 2px;
+  border-top: solid 2px
+}
+
+.contact , .newsletter{
+  border: none;
+  padding: 0;
+  margin: 0 auto 20px;
+}
+
+.contact {
+  border-bottom: solid 2px;
+  padding-bottom: 20px
+}
+
+.contact legend , .newsletter legend{
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.contact input , select {
+  width: 100%;
+  background-color: #eff0f1;
+  border: none;
+  padding: 15px 0 15px 0;
+  border-radius: 5px;
+  margin: 10px 0 10px 0;
+}
+
+.contact input:focus {
+  border: solid 2px;
+  border-color: #55687a;
+  outline: none;
+}
+
+.contact select:focus {
+  border: solid 2px;
+  border-color: #55687a;
+  outline: none;
+}
+
+.contact label {
+  color: #55687a;
+  padding: 10px 0 10px 0;
+  margin-bottom: 10px;
+}
+
+#email , value{
+  text-align: right;
+}
+
+.newsletter input[type="checkbox"], input[type="radio"] {
+  margin: 0 0 10px 0;
+}
+
+input[type=checkbox]:not(old),
+input[type=radio   ]:not(old){
+  width     : 2em;
+  margin    : 0;
+  padding   : 0;
+  font-size : 1em;
+  opacity   : 0;
+}
+
+input[type=checkbox]:not(old) + label,
+input[type=radio   ]:not(old) + label{
+  display      : inline-block;
+  margin-left  : -2em;
+  line-height  : 1.5em;
+}
+
+input[type=checkbox]:not(old) + label > span{
+  display          : inline-block;
+  width            : 0.875em;
+  height           : 0.875em;
+  margin           : 0.25em 0.5em 0.25em 0.25em;
+  border           : ;
+  border-radius    : 0.25em;
+  background       : rgb(224,224,224);
+  background-image :    -moz-(rgb(239,240,241));
+  background-image :     -ms-(rgb(239,240,241));
+  background-image :      -o-(rgb(239,240,241));
+  background-image : -webkit-(rgb(239,240,241));
+  background-image :         (rgb(239,240,241));
+  vertical-align   : bottom;
+}
+
+input[type=checkbox]:not(old):checked + label > span:before{
+  content     : '✓';
+  display     : block;
+  padding-left: .05em;
+  width       : 1em;
+  color       : #55687A;
+  font-size   : 0.75em;
+  line-height : 1.25em;
+  text-align  : center;
+  text-shadow : 0 0 0.0714em rgb(115,153,77);
+  font-weight : bold;
+}
+
+input[type=checkbox]:not(old):checked + label > span > span{
+  display          : inline-block;
+  width            : 0.75em;
+  height           : 0.75em;
+  margin           : 0.25em 0.5em 0.25em 0.25em;
+  position: relative;
+  bottom: 20px;
+  right: 5px;
+  border           : .125em solid #55687A;
+  border-radius    : 0.25em;
+  background       : none;
+  vertical-align   : bottom;
+}
+
+input[type=radio   ]:not(old) + label > span{
+  display          : inline-block;
+  width            : 0.875em;
+  height           : 0.875em;
+  margin           : 0.25em 0.5em 0.25em 0.25em;
+  border           : ;
+  border-radius    : 50%;
+  z-index: 1;
+  background       : rgb(224,224,224);
+  background-image :    -moz-(rgb(239,240,241));
+  background-image :     -ms-(rgb(239,240,241));
+  background-image :      -o-(rgb(239,240,241));
+  background-image : -webkit-(rgb(239,240,241));
+  background-image :         (rgb(239,240,241));
+  vertical-align   : bottom;
+}
+
+input[type=radio]:not(old):checked + label > span > span{
+  display          : block;
+  width            : 0.25em;
+  height           : 0.25em;
+  margin           : 0.25em;
+  border           : 0.0625em solid rgb(115,153,77);
+  border-radius    : 50%;
+  background       : #55687A;
+  background-image :    -moz-(#55687A);
+  background-image :     -ms-(#55687A);
+  background-image :      -o-(#55687A);
+  background-image : -webkit-(#55687A);
+  background-image :         (#55687A);
+}
+
+input[type=radio]:not(old):checked + label > span > span > span{
+  display          : block;
+  width            : .75em;
+  height           : .75em;
+  margin    : -.375em;
+  border           : 0.125em solid #55687A;
+  border-radius    : 50%;
+  background       : #00000000;
+  background-image :    -moz-(#00000000);
+  background-image :     -ms-(#00000000);
+  background-image :      -o-(#00000000);
+  background-image : -webkit-(#00000000);
+  background-image :         (#00000000);
+}
+
+.newsletter p {
+  color: #55687a;
+}
+
+.newsletter label {
+  color: #55687a;
+}
+
+#topics {
+  width: 100%;
+  margin: 10px auto 20px;
+  border-radius: 5px;
+  height: 100px;
+  background-color: #eff0f1;
+  border: none;
+}
+
+#topics:focus {
+  border: solid 2px;
+  border-color: #55687a;
+  outline: none;
+}
+
+.submit {
+  width: 100%;
+  padding: 20px 0 20px 0;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  font-size: 125%;
+  background-color: #4ebbb5;
+  border: none;
+}
+
+footer {
+  font-style: italic;
+  color: silver;
+  text-align: center;
+  margin: 0 auto;
 }
