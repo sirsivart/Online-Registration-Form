@@ -1,5 +1,16 @@
 /* Main Styles */
 
+.body {
+  font-family: 'Work Sans', sans-serif;
+  background-image: url(https://66.media.tumblr.com/83928a1806eea0bf918c0dff130c9dbc/tumblr_na39k233Xy1r83cqho1_400.gif);
+}
+
+.backtransparent {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.92);
+}
+
 .wrapper {
   width: 90%;
   margin: 0 auto;
@@ -10,7 +21,9 @@
   text-align: center;
   margin: 0 auto;
   color: white;
-  background-color: #2d3945;
+  background: #485563; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #485563 , #29323c); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #485563 , #29323c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding: 20px 0 20px 0;
 }
 
@@ -59,18 +72,22 @@
   margin: 10px auto;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  transition: background-color 2s;
 }
 
 .contact input:focus {
   border: solid 2px;
   border-color: #55687a;
   outline: none;
+  background-color: white;
+
 }
 
 .contact select:focus {
   border: solid 2px;
   border-color: #55687a;
   outline: none;
+  background-color: white;
 }
 
 .contact label {
@@ -84,6 +101,24 @@
   font-style: italic;
   text-align: right;
   padding-right: 20px;
+}
+
+input[id="pizza"]::-webkit-input-placeholder , input[id="phone"]::-webkit-input-placeholder , input[id="address"]::-webkit-input-placeholder , input[id="city"]::-webkit-input-placeholder , input[id="zipcode"]::-webkit-input-placeholder {
+  text-align: left;
+}
+
+select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+    }
+
+#state {
+  color: silver;
+  background-image: url(http://image.flaticon.com/icons/png/128/118/118738.png);
+  background-repeat: no-repeat;
+  background-position: 95% center;
+  background-size: 20px;
+  padding-right: 5px;
 }
 
 .newsletter input[type="checkbox"], input[type="radio"] {
@@ -111,14 +146,8 @@ input[type=checkbox]:not(old) + label > span{
   width            : 0.875em;
   height           : 0.875em;
   margin           : 0.25em 0.5em 0.25em 0.25em;
-  border           : ;
   border-radius    : 0.25em;
   background       : rgb(224,224,224);
-  background-image :    -moz-(rgb(239,240,241));
-  background-image :     -ms-(rgb(239,240,241));
-  background-image :      -o-(rgb(239,240,241));
-  background-image : -webkit-(rgb(239,240,241));
-  background-image :         (rgb(239,240,241));
   vertical-align   : bottom;
 }
 
@@ -154,15 +183,9 @@ input[type=radio   ]:not(old) + label > span{
   width            : 0.875em;
   height           : 0.875em;
   margin           : 0.25em 0.5em 0.25em 0.25em;
-  border           : ;
   border-radius    : 50%;
   z-index: 1;
   background       : rgb(224,224,224);
-  background-image :    -moz-(rgb(239,240,241));
-  background-image :     -ms-(rgb(239,240,241));
-  background-image :      -o-(rgb(239,240,241));
-  background-image : -webkit-(rgb(239,240,241));
-  background-image :         (rgb(239,240,241));
   vertical-align   : bottom;
 }
 
@@ -174,11 +197,6 @@ input[type=radio]:not(old):checked + label > span > span{
   border           : 0.0625em solid rgb(115,153,77);
   border-radius    : 50%;
   background       : #55687A;
-  background-image :    -moz-(#55687A);
-  background-image :     -ms-(#55687A);
-  background-image :      -o-(#55687A);
-  background-image : -webkit-(#55687A);
-  background-image :         (#55687A);
 }
 
 input[type=radio]:not(old):checked + label > span > span > span{
@@ -188,12 +206,6 @@ input[type=radio]:not(old):checked + label > span > span > span{
   margin    : -.375em;
   border           : 0.125em solid #55687A;
   border-radius    : 50%;
-  background       : #00000000;
-  background-image :    -moz-(#00000000);
-  background-image :     -ms-(#00000000);
-  background-image :      -o-(#00000000);
-  background-image : -webkit-(#00000000);
-  background-image :         (#00000000);
 }
 
 .newsletter p {
@@ -211,12 +223,14 @@ input[type=radio]:not(old):checked + label > span > span > span{
   height: 100px;
   background-color: #eff0f1;
   border: none;
+  transition: background-color 2s;
 }
 
 #topics:focus {
   border: solid 2px;
   border-color: #55687a;
   outline: none;
+  background-color: white;
 }
 
 .submit {
@@ -227,7 +241,9 @@ input[type=radio]:not(old):checked + label > span > span > span{
   border: none;
   border-radius: 5px;
   font-size: 125%;
-  background-color: #4ebbb5;
+  background: #485563; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #485563 , #29323c); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #485563 , #29323c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   border: none;
 }
 
@@ -236,4 +252,15 @@ footer {
   color: silver;
   text-align: center;
   margin: 0 auto;
+}
+@media (min-width: 600px) {
+  .wrapper {
+    max-width: 75%;
+  }
+}
+
+@media (min-width: 760px) {
+  .wrapper {
+    max-width: 50%;
+  }
 }
