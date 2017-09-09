@@ -107,7 +107,7 @@
           <br>
           <label for="zipcode">Zip Code</label>
           <br>
-          <input id="zipcode" type="number" name="zipcode" value="" placeholder="55555">
+          <input id="zipcode" type="text" name="zipcode" value="" placeholder="55555" pattern="\d{5}-?(\d{4})?">
           <br>
           <label for="pizza">Favorite Pizza</label>
           <br>
@@ -138,8 +138,7 @@
           <br>
           <label for="topics">Other topics you'd like to hear about</label>
           <br>
-          <textarea id="topics" name="topics" rows="8" cols="40">
-          </textarea>
+          <textarea id="topics" name="topics" rows="8" cols="40"></textarea>
           <br>
           <input class="submit" type="submit" name="submit" value="Sign Up">
         </fieldset>
